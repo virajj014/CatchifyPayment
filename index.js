@@ -8,7 +8,7 @@ var app = express();
 var port = process.env.PORT || 4000;
 
 // enable CORS
-app.use(cors({ origin: ['https://catchyfive.com/', 'http://localhost:3000' , 'https://catchifive.vercel.app/']}))
+app.use(cors({ origin: ['https://catchyfive.com', 'http://localhost:3000' , 'https://catchifive.vercel.app']}))
 // parse application/json
 app.use(bodyParser.json());
 // parse application/x-www-form-urlencoded
