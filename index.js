@@ -8,9 +8,7 @@ var app = express();
 var port = process.env.PORT || 4000;
 
 // enable CORS
-app.use(cors({ origin: 
-    ['http://localhost:3000', 'https://catchyfive.com/'],
-}))
+app.use(cors({ origin: 'https://catchyfive.com/'}))
 // parse application/json
 app.use(bodyParser.json());
 // parse application/x-www-form-urlencoded
